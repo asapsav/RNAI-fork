@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Example</title>
+  </head>
+  <body>
+    <form method="post">
+      <label for="input_str">Enter a string:</label>
+      <input type="text" name="input_str" id="input_str">
+      <button type="submit">Process</button>
+    </form>
+    {% if output_str %}
+    <p>The processed string is: {{ output_str }}</p>
+    {% endif %}
+  </body>
+</html>
